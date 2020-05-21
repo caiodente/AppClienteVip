@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">TRAMAR INDUSTRIAL</string>
+    <string name="txt_titulo">Aplicativo do Caio</string>
+    <string name="txtDataAtual">22/04/2020</string>
+    <string name="txtHoraAtual">09:33:00</string>
+    <string name="btnCadastrarNovoUsuario">Cadastrar novo usuário</string>
+    <string name="btnCadastrar">Cadastrar</string>
+
+    <!--Tela de Login-->
+
+    <string name="txtLogin">Login</string>
+    <string name="txtLembrar">Lembrar</string>
+    <string name="txtRecuperarSenha">Recuperar Senha</string>
+    <string name="btnAcessar">ACESSAR</string>
+    <string name="btnSejaVip">SOLICITE SEU ACESSO (VIP)</string>
+    <string name="txtVersaoApp">Versão BETA</string>
+    <string name="txtLerPolitica">Ler politica e termos de uso.</string>
+
+    <!--formulario de cadastro de usuários-->
+
+    <string name="txtCadastro">Cadastro</string>
+    <string name="txtNome">Nome</string>
+    <string name="txtHintNome">Digite seu primeiro nome…</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtHintEmail">Digite seu email</string>
+    <string name="txtSenhaA">Senha</string>
+    <string name="txtHintSenhaA">Informe sua senha</string>
+    <string name="txtSenhaB">Repita sua senha</string>
+    <string name="txtHintSenhaB">Confirme sua senha</string>
+    <string name="txtckTermo">Li e concordo com os termos de uso.</string>
+
+    <!--Tela de Cliente VIP-->
+
+    <string name="txtNovoVip">Novo Vip</string>
+    <string name="txtPrimeiroNome">Primeiro Nome</string>
+    <string name="txtHintPrimeiroNome">Digite seu primeiro nome...</string>
+    <string name="txtSobrenome">Sobrenome</string>
+    <string name="txtHintSobrenome">Digite seu sobrenome...</string>
+    <string name="txtPessoaFisica">Pessoa Fisica</string>
+    <string name="btnSalvarEContinuar">SALVAR E CONTINUAR</string>
+    <string name="btnCancelar">CANCELAR</string>
+
+    <!--Tela de Pessoa Fisica-->
+
+    <string name="txtCpf">CPF</string>
+    <string name="txtHintCpf">Digite seu CPF...</string>
+    <string name="txtNomeCompleto">Nome Completo</string>
+    <string name="txtHintNomeCompleto">Digite seu Nome igual ao CPF...</string>
+    <string name="btnSalvarEConcluir">SALVAR E CONCLUIR</string>
+    <string name="btnVoltar">VOLTAR</string>
+
+    <!--Tela de Pessoa Juridica-->
+
+    <string name="txtPessoaJuridica">Pessoa Jurídica</string>
+    <string name="txtCnpj">CNPJ</string>
+    <string name="txtHintCnpj">Digite seu CNPJ...</string>
+    <string name="txtRazaoSocial">Razão Social</string>
+    <string name="txtDataAbertura">Data de Abertura da Empresa</string>
+    <string name="EditCkData">dd/mm/aaaa</string>
+    <string name="txtHintRazaoSocial">Digite sua Razaão Social...</string>
+    <string name="txtckSimplesNacional">Simples Nacional</string>
+    <string name="txtckMei">Mei</string>
+
+    <!--Tela de Recuperar senha-->
+
+    <string name="txtEmailCadastrado">E-mail:</string>
+    <string name="txtHintEmailCadastrado">Digite o email cadastrado....</string>
+    <string name="btnRecuperar">RECUPERAR</string>
+
+</resources>
