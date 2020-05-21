@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -12,6 +13,11 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.shashank.sony.fancydialoglib.Animation;
+import com.shashank.sony.fancydialoglib.FancyAlertDialog;
+import com.shashank.sony.fancydialoglib.FancyAlertDialogListener;
+import com.shashank.sony.fancydialoglib.Icon;
 
 import Controller.ClienteController;
 import Model.Cliente;
@@ -105,30 +111,33 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
 
-        /*    new FancyAlertDialog.Builder(this)
-                    .setTitle("Rate us if you like the app")
+            new FancyAlertDialog.Builder(LoginActivity.this)
+                    .setTitle("Politica de privacidade $ termos de Uso")
                     .setBackgroundColor(Color.parseColor("#303F9F"))  //Don't pass R.color.colorvalue
-                    .setMessage("Do you really want to Exit ?")
-                    .setNegativeBtnText("Cancel")
+                    .setMessage("O mundo é um lugar perigoso de se viver, não por causa daqueles que fazem o mal, " +
+                            "mas sim por causa daqueles que observam e deixam o mal acontecer.")
+                    .setNegativeBtnText("Discordo")
                     .setPositiveBtnBackground(Color.parseColor("#FF4081"))  //Don't pass R.color.colorvalue
-                    .setPositiveBtnText("Rate")
+                    .setPositiveBtnText("Concordo")
                     .setNegativeBtnBackground(Color.parseColor("#FFA9A7A8"))  //Don't pass R.color.colorvalue
                     .setAnimation(Animation.POP)
                     .isCancellable(true)
-                    .setIcon(R.drawable.ic_star_border_black_24dp,Icon.Visible)
+                    .setIcon(R.drawable.ic_star_border_black_24dp, Icon.Visible)
                     .OnPositiveClicked(new FancyAlertDialogListener() {
                         @Override
                         public void OnClick() {
-                            Toast.makeText(getApplicationContext(),"Rate",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(),"Obrigado! Vamos, lá!",Toast.LENGTH_SHORT).show();
                         }
                     })
                     .OnNegativeClicked(new FancyAlertDialogListener() {
                         @Override
                         public void OnClick() {
-                            Toast.makeText(getApplicationContext(),"Cancel",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(),"Desculpe não te atender :(",Toast.LENGTH_SHORT).show();
+                        finish();
+                        return;
                         }
                     })
-                    .build(); */
+                    .build();
         }
     });
 
