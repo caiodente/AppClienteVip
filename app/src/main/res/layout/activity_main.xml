@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/txt_titulo"
+        android:text="@string/txt_FinalizacaoCadastro"
         android:textColor="@color/colorTextView"
         android:textSize="30sp"
         app:fontFamily="casual"

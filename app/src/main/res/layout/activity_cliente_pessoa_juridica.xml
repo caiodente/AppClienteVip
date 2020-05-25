@@ -87,7 +87,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginRight="16dp"
         android:ems="10"
-        android:text="@string/EditCkData"
+        android:hint="dd/mm/aaaa"
         android:inputType="date"
         android:textStyle="bold"/>
 

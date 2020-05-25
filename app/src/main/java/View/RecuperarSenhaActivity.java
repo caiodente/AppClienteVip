@@ -45,7 +45,9 @@ public class RecuperarSenhaActivity extends AppCompatActivity {
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RecuperarSenhaActivity.this, LoginActivity.class);
+                Intent intent = new Intent(RecuperarSenhaActivity.this,
+                        LoginActivity.class);
+                startActivity(intent);
             }
         });
     }

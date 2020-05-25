@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent iTelaCadastro = new Intent(MainActivity.this, CadastroUsuarioActivity.class);
+                Intent iTelaCadastro = new Intent(MainActivity.this, CredencialDeAcessoActivity.class);
                 startActivity(iTelaCadastro);
             }
         });
