@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TRAMAR INDUSTRIAL</string>
+    <string name="app_name">Moto Package</string>
     <string name="txt_FinalizacaoCadastro">Credenciais de Acesso</string>
     <string name="txtDataAtual">22/04/2020</string>
     <string name="txtHoraAtual">09:33:00</string>
@@ -66,5 +66,13 @@
     <string name="txtEmailCadastrado">E-mail:</string>
     <string name="txtHintEmailCadastrado">Digite o email cadastrado....</string>
     <string name="btnRecuperar">RECUPERAR</string>
+
+    <!--Tela MENU PRINCIPAL-->
+
+    <string name="btnMeusDados">MEUS DADOS</string>
+    <string name="btnAtualizarDados">ATUALIZAR MEUS DADOS</string>
+    <string name="btnExcluirConta">EXCLUIR MINHA CONTA</string>
+    <string name="btnConsultarClientes">CONSULTAR CLIENTES VIP</string>
+    <string name="btnSairApp">SAIR DO APLICATIVO</string>
 
 </resources>

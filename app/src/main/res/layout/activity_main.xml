@@ -10,58 +10,107 @@
     <!--Definições das caracteristicas da fonte e texto do TITULO, quando ="@color/colorTextView"
              ele buscar as alterações de cores do colors.xml-->
     <TextView
-        android:id="@+id/txtTitulo"
+        android:id="@+id/txtappName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/txt_FinalizacaoCadastro"
-        android:textColor="@color/colorTextView"
+        android:text="@string/app_name"
         android:textSize="30sp"
-        app:fontFamily="casual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:textStyle="bold" />
 
-    <!--Definições das caracteristicas DATA-->
     <TextView
-        android:id="@+id/textDataAtual"
+        android:id="@+id/textNomeCliente"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="36dp"
-        android:text="@string/txtDataAtual"
-        android:textColor="@color/colorTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
-
-    <!--Definições das caracteristicas HORA-->
-    <TextView
-        android:id="@+id/texthoraAtual"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="@string/txtHoraAtual"
-        android:textColor="@color/colorTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textDataAtual"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
-
-    <Button
-        android:id="@+id/btnCadastrarNovoUsuario"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:text="@string/btnCadastrarNovoUsuario"
+        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitulo"
-        app:layout_goneMarginEnd="16dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txtappName"
+        app:layout_constraintVertical_bias="0.055"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorAzul"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnMeusDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnMeusDados"
+        android:onClick="meusDados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNomeCliente"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <Button
+        android:id="@+id/btnAtualizarDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnAtualizarDados"
+        android:onClick="atualizarMeusDados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMeusDados"
+        tools:layout_editor_absoluteY="407dp" />
+
+    <Button
+        android:id="@+id/btnExcluirConta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnExcluirConta"
+        android:onClick="excluirMinhaConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAtualizarDados"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <Button
+        android:id="@+id/btnConsultaClientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnConsultarClientes"
+        android:onClick="consultarClientesVip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExcluirConta"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <Button
+        android:id="@+id/btnSairApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/btnSairApp"
+        android:onClick="sairDoAplicativo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultaClientes"
+        tools:layout_editor_absoluteY="341dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

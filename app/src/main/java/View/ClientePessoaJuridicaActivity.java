@@ -139,9 +139,15 @@ public class ClientePessoaJuridicaActivity extends AppCompatActivity {
 
 
     }
-    public void  (View view){
 
-        isPessoaFisica = ckPessoaFisica.isChecked();
+    public void mei (View view){
+
+        isMei = ckMei.isChecked();
+    }
+
+    public void simplesNacional (View view){
+
+        isSimplesNacional = ckSimplesNacional.isChecked();
     }
 
     private void restaurarSharedPreferences() {
@@ -155,6 +161,7 @@ public class ClientePessoaJuridicaActivity extends AppCompatActivity {
         dados.putString("RazaoSocial", editRazaoSocial.getText().toString());
         dados.putBoolean("simplesNacional", isSimplesNacional);
         dados.putBoolean("Mei", isMei);
+        dados.putString("dataAbertura",editDataAbertura.getText().toString());
         dados.apply();
     }
 
