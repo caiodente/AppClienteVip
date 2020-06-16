@@ -74,5 +74,6 @@
     <string name="btnExcluirConta">EXCLUIR MINHA CONTA</string>
     <string name="btnConsultarClientes">CONSULTAR CLIENTES VIP</string>
     <string name="btnSairApp">SAIR DO APLICATIVO</string>
+    <string name="txtcliente">txtCliente</string>
 
 </resources>

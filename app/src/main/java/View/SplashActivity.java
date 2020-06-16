@@ -42,7 +42,7 @@ public class SplashActivity extends AppCompatActivity {
 
 
                 if (isLembrarSenha) {
-                    intent = new Intent(SplashActivity.this, LoginActivity.class);
+                    intent = new Intent(SplashActivity.this, MainActivity.class);
                 } else {
                     intent = new Intent(SplashActivity.this, LoginActivity.class);
                 }

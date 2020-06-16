@@ -208,11 +208,11 @@ public class LoginActivity extends AppCompatActivity {
 
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
 
-        cliente.setEmail(preferences.getString("email" ,"teste@teste.com.br"));
-        cliente.setSenha(preferences.getString("senha" ,"@abc1234"));
-        cliente.setPrimeiroNome(preferences.getString("primeironome" ,"Cliente"));
-        cliente.setSobrenome(preferences.getString("sobrenome" ,"Fake"));
-        cliente.setPessoaFisica(preferences.getBoolean("pessoafisica" ,true));
+        cliente.setEmail(preferences.getString("Email" ,"teste@teste.com.br"));
+        cliente.setSenha(preferences.getString("Senha" ,"@abc1234"));
+        cliente.setPrimeiroNome(preferences.getString("Primeironome" ,"Cliente"));
+        cliente.setSobrenome(preferences.getString("Sobrenome" ,"Fake"));
+        cliente.setPessoaFisica(preferences.getBoolean("Pessoafisica" ,true));
 
 
         isLembrarSenha = preferences.getBoolean("loginAutomatico", false);

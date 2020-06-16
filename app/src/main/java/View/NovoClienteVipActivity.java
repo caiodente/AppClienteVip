@@ -133,9 +133,9 @@ public class NovoClienteVipActivity extends AppCompatActivity {
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
         SharedPreferences.Editor dados = preferences.edit();
 
-        dados.putString("primeiroNome", novoVip.getPrimeiroNome());
+        dados.putString("PrimeiroNome", novoVip.getPrimeiroNome());
         dados.putString("Sobrenome", novoVip.getSobrenome());
-        dados.putBoolean("pessoaFisica", novoVip.isPessoaFisica());
+        dados.putBoolean("PessoaFisica", novoVip.isPessoaFisica());
         dados.apply();
     }
 

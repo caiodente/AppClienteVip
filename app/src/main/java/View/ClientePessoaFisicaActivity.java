@@ -127,14 +127,14 @@ public class ClientePessoaFisicaActivity extends AppCompatActivity {
 
     private void restaurarSharedPreferences() {
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
-        isPessoaFisica = preferences.getBoolean("pessoaFisica", true);
+        isPessoaFisica = preferences.getBoolean("PessoaFisica", true);
     }
 
     private void salvarSharedPreferences() {
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
         SharedPreferences.Editor dados = preferences.edit();
-        dados.putString("cpf", editCpf.getText().toString());
-        dados.putString("nomeCompleto", editNomeCompleto.getText().toString());
+        dados.putString("Cpf", editCpf.getText().toString());
+        dados.putString("NomeCompleto", editNomeCompleto.getText().toString());
         dados.apply();
     }
 

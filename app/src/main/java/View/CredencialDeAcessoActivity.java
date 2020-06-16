@@ -178,19 +178,19 @@ public class CredencialDeAcessoActivity extends AppCompatActivity {
     private void salvarSharedPreferences() {
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
         SharedPreferences.Editor dados = preferences.edit();
-        dados.putString("email", editEmail.getText().toString());
-        dados.putString("senha", editSenhaA.getText().toString());
+        dados.putString("Email", editEmail.getText().toString());
+        dados.putString("Senha", editSenhaA.getText().toString());
         dados.apply();
     }
 
     private void restaurarSharedPreferences() {
 
         preferences = getSharedPreferences(AppUtil.PREF_APP, MODE_PRIVATE);
-        isPessoaFisica = preferences.getBoolean("pessoaFisica", true);
+        isPessoaFisica = preferences.getBoolean("PessoaFisica", true);
         if (isPessoaFisica)
-            editNome.setText(preferences.getString("nomecompleto", "Verifique os dados"));
+            editNome.setText(preferences.getString("NomeCompleto", "Verifique os dados"));
         else
-            editNome.setText(preferences.getString("razaoSocial", "Verifique os dados"));
+            editNome.setText(preferences.getString("RazaoSocial", "Verifique os dados"));
 
     }
 
